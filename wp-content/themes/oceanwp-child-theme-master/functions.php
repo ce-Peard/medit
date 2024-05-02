@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Child theme functions
  *
@@ -19,22 +20,25 @@
  *
  * @link http://codex.wordpress.org/Child_Themes
  */
-function oceanwp_child_enqueue_parent_style() {
+function oceanwp_child_enqueue_parent_style()
+{
 	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update your theme)
-	$theme   = wp_get_theme( 'OceanWP' );
-	$version = $theme->get( 'Version' );
+	$theme   = wp_get_theme('OceanWP');
+	$version = $theme->get('Version');
 	// Load the stylesheet
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
-
+	wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('oceanwp-style'), $version);
+	wp_enqueue_script('child-script', get_stylesheet_directory_uri() . '/scripts/script.js');
+	wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js');
 }
-add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+add_action('wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style');
 
 
 
 
-function contact_btn( $items, $args ) {
+function contact_btn($items, $args)
+{
 	$items .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
 	return $items;
 }
 
-add_filter( 'wp_nav_menu_items', 'contact_btn', 10, 2 );
+add_filter('wp_nav_menu_items', 'contact_btn', 10, 2);
