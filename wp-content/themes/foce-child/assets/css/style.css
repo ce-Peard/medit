@@ -1,0 +1,1177 @@
+/*------------------------------------------------------------------
+Woo Slider
+-------------------------------------------------------------------*/
+.oew-woo-carousel .swiper-container,
+.oew-woo-carousel .swiper {
+  width: 95%;
+}
+.oew-woo-carousel .swiper-container.has-dots,
+.oew-woo-carousel .swiper.has-dots {
+  padding-bottom: 10px;
+}
+.oew-woo-carousel ul.products {
+  padding: 0;
+  margin: 0;
+}
+.oew-woo-carousel .star-rating {
+  margin: 0 auto;
+}
+.oew-woo-carousel .oew-swiper-buttons {
+  background-image: none;
+  outline: none;
+  margin-top: 0;
+  width: 40px;
+  top: calc(50% - 20px);
+  text-align: center;
+}
+.oew-woo-carousel .oew-swiper-buttons::after {
+  content: none;
+}
+.oew-woo-carousel .oew-swiper-buttons svg {
+  width: 20px;
+}
+.oew-woo-carousel .oew-swiper-buttons, .oew-woo-carousel .oew-swiper-buttons svg {
+  height: 40px;
+  transition: all 0.3s ease;
+}
+.oew-woo-carousel .swiper-button-next {
+  right: 0;
+}
+.oew-woo-carousel .swiper-button-prev {
+  left: 0;
+}
+.oew-woo-carousel .swiper-pagination {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.oew-woo-carousel .swiper-pagination-bullet {
+  background: #ccc;
+  margin: 0 4px;
+  height: 8px;
+  width: 8px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.oew-woo-carousel .swiper-pagination-bullet-active {
+  background: #000;
+}
+
+body .oew-woo-carousel .product {
+  clear: none;
+}
+
+/* RTL */
+body.rtl .oew-woo-carousel .swiper-button-next {
+  right: auto;
+  left: 0;
+}
+body.rtl .oew-woo-carousel .swiper-button-prev {
+  left: auto;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */;
+  height: 0;
+  margin-top: 4px;
+  border-style: solid solid solid none;
+  border-width: 5px 5px 5px medium;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-color: #13aff0;
+}
+
+.oew-cart-total {
+  margin-left: 4px;
+  transition: all 0.3s ease;
+}
+.oew-cart-total .amount {
+  color: inherit;
+}
+
+.oew-cart-icon,
+.oew-cart-count,
+.oew-cart-total {
+  vertical-align: middle;
+}
+
+.elementor-widget-oew-woo-cart-icon:not(.oew-cart-show-count-yes) .oew-cart-count,
+.elementor-widget-oew-woo-cart-icon:not(.oew-cart-show-subtotal-yes) .oew-cart-total {
+  display: none;
+}
+
+/* Mini cart */
+.oew-cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-top: 3px solid #13aff0;
+  z-index: 10000;
+  text-align: left;
+  width: 350px;
+  visibility: hidden;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+.oew-cart-dropdown ul.oew-cart-products {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.oew-cart-dropdown li:first-child {
+  border-top: none;
+}
+.oew-cart-dropdown .oew-mini-cart-empty-message {
+  padding: 20px;
+  margin: 0;
+}
+
+.oew-toggle-cart:hover .oew-cart-dropdown {
+  visibility: visible;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+.oew-cart-dropdown .oew-cart-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.oew-cart-dropdown .oew-cart-products li {
+  padding: 0;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  min-height: 100%;
+}
+.oew-cart-dropdown .oew-cart-products li:first-child, .oew-cart-dropdown .oew-cart-products li:last-child {
+  min-height: 100%;
+}
+.oew-cart-dropdown .oew-cart-products li:first-child {
+  border-top-width: 0;
+}
+.oew-cart-dropdown .oew-cart-products li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid {
+  width: 100%;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid.thumbnail {
+  width: 25%;
+  margin: 0;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid.thumbnail img {
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid.content {
+  position: relative;
+  width: 75%;
+  padding-left: 10px;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid > div {
+  padding-right: 60px;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid h3 {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid .quantity {
+  color: #b2b2b2;
+  font-weight: normal;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid a.remove {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 14px;
+  margin-top: -17px;
+  color: #b3b3b3;
+  border: 1px solid #e6e6e6;
+  height: 32px;
+  width: 32px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 20;
+}
+.oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid a.remove:hover {
+  color: #13aff0;
+  border-color: #13aff0;
+}
+.oew-cart-dropdown .oew-cart-subtotal {
+  background-color: #fafafa;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+  padding: 20px;
+  margin: 0;
+}
+.oew-cart-dropdown .oew-cart-subtotal strong {
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #797979;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.oew-cart-dropdown .oew-cart-subtotal .amount {
+  float: right;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.oew-cart-dropdown .oew-cart-subtotal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.oew-cart-footer-buttons {
+  margin: 0;
+  padding: 20px;
+}
+.oew-cart-footer-buttons .oew-button {
+  width: 48%;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 14px 8px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.oew-cart-footer-buttons .oew-cart-view-cart {
+  float: left;
+  background-color: #eaeaea;
+  color: #666;
+}
+.oew-cart-footer-buttons .oew-cart-view-cart:hover {
+  background-color: #d4d4d4;
+  color: #333;
+}
+.oew-cart-footer-buttons .oew-cart-checkout {
+  float: right;
+  background-color: #13aff0;
+  color: #fff;
+}
+.oew-cart-footer-buttons .oew-cart-checkout:hover {
+  background-color: #0b7cac;
+  color: #fff;
+}
+.oew-cart-footer-buttons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.oew-align-left {
+  text-align: left;
+}
+
+.oew-align-center {
+  text-align: center;
+}
+
+.oew-align-right {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .oew-tablet-align-left {
+    text-align: left;
+  }
+  .oew-tablet-align-center {
+    text-align: center;
+  }
+  .oew-tablet-align-right {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .oew-mobile-align-left {
+    text-align: left;
+  }
+  .oew-mobile-align-center {
+    text-align: center;
+  }
+  .oew-mobile-align-right {
+    text-align: right;
+  }
+}
+/* RTL */
+body.rtl {
+  /* Mini cart */
+}
+body.rtl .oew-cart-count {
+  margin-right: 4px;
+  margin-left: 0;
+}
+body.rtl .oew-cart-count:before {
+  right: -3px;
+  left: auto;
+  border-style: solid none solid solid;
+  border-width: 5px medium 5px 5px;
+}
+body.rtl .oew-cart-total {
+  margin-right: 4px;
+  margin-left: 0;
+}
+body.rtl .oew-cart-dropdown {
+  left: 0;
+  right: auto;
+}
+body.rtl .oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid.thumbnail {
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+body.rtl .oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid.content {
+  padding-right: 10px;
+  padding-left: 0;
+}
+body.rtl .oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid > div {
+  padding-left: 60px;
+  padding-right: 0;
+}
+body.rtl .oew-cart-dropdown .oew-cart-products li .oew-grid-wrap .oew-grid a.remove {
+  left: 20px;
+  right: auto;
+}
+body.rtl .oew-cart-dropdown .oew-cart-subtotal strong {
+  float: right;
+}
+body.rtl .oew-cart-dropdown .oew-cart-subtotal .amount {
+  float: left;
+}
+body.rtl .oew-cart-footer-buttons .oew-cart-view-cart {
+  float: right;
+}
+body.rtl .oew-cart-footer-buttons .oew-cart-checkout {
+  float: left;
+}
+
+/*------------------------------------------------------------------
+Responsive
+-------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */ing-right: 0;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-item-container {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-arrow {
+    left: -8px;
+    right: auto;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-line {
+    left: 0;
+    right: auto;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-icon {
+    left: 0;
+    right: auto;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-right .oew-timeline-item-container {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+  body.rtl .oew-timeline.oew-timeline-center .oew-timeline-item-right .oew-timeline-icon {
+    right: 0;
+    left: auto;
+  }
+}
+@media only screen and (max-width: 959px) {
+  body.rtl .oew-timeline .oew-timeline-item-wrap {
+    padding-right: 0;
+  }
+  body.rtl .oew-timeline .oew-timeline-item-wrap .oew-timeline-icon {
+    right: 0;
+    left: auto;
+  }
+}
+
+/*------------------------------------------------------------------
+Responsive
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 960px) {
+  .oew-timeline.oew-timeline-center .oew-timeline-item {
+    width: 50%;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-wrap {
+    padding-left: 0;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-item-container {
+    padding-right: 50px;
+    padding-left: 0;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-arrow {
+    right: -8px;
+    left: auto;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-line {
+    right: 0;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-left .oew-timeline-icon {
+    right: 0;
+    left: auto;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-right .oew-timeline-item-container {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  .oew-timeline.oew-timeline-center .oew-timeline-item-right .oew-timeline-icon {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .oew-timeline .oew-timeline-item-wrap {
+    padding-left: 0;
+  }
+  .oew-timeline .oew-timeline-item-wrap .oew-timeline-icon {
+    left: 0;
+  }
+  .oew-timeline .oew-timeline-date {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */btns, .oew-device-google-pixel.oew-device-black .oew-device-btns::after, .oew-device-google-pixel.oew-device-black .oew-device-btns::before {
+  background: #363635;
+}
+.oew-device-google-pixel.oew-device-black .oew-device-power {
+  background: #363635;
+}
+.oew-device-google-pixel.oew-device-blue .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #2a5aff, inset 0 0 0 6px #7695ff, inset 0 0 0 10px white;
+}
+.oew-device-google-pixel.oew-device-blue .oew-device-btns, .oew-device-google-pixel.oew-device-blue .oew-device-btns::after, .oew-device-google-pixel.oew-device-blue .oew-device-btns::before {
+  background: #2a5aff;
+}
+.oew-device-google-pixel.oew-device-blue .oew-device-power {
+  background: #2a5aff;
+}
+
+.oew-device-galaxy-s8 {
+  height: 828px;
+  width: 380px;
+}
+.oew-device-galaxy-s8 .oew-device-frame {
+  background: #222;
+  border: solid #cfcfcf;
+  border-radius: 55px;
+  border-width: 5px 0;
+  box-shadow: inset 0 0 0 2px #9c9c9c;
+  height: 828px;
+  padding: 48px 10px 40px 10px;
+  width: 380px;
+}
+.oew-device-galaxy-s8 .oew-device-content {
+  border: 2px solid #222;
+  border-radius: 34px;
+  height: 740px;
+  width: 360px;
+}
+.oew-device-galaxy-s8 .oew-device-stripe::after, .oew-device-galaxy-s8 .oew-device-stripe::before {
+  border: solid rgba(51, 51, 51, 0.15);
+  border-width: 5px 0;
+  content: "";
+  height: 828px;
+  position: absolute;
+  top: 0;
+  width: 6px;
+  z-index: 9;
+}
+.oew-device-galaxy-s8 .oew-device-stripe::after {
+  left: 48px;
+}
+.oew-device-galaxy-s8 .oew-device-stripe::before {
+  right: 48px;
+}
+.oew-device-galaxy-s8 .oew-device-sensors {
+  background: #666;
+  border-radius: 3px;
+  height: 6px;
+  left: 50%;
+  margin-left: -24px;
+  margin-top: -3px;
+  position: absolute;
+  top: 32px;
+  width: 48px;
+}
+.oew-device-galaxy-s8 .oew-device-sensors::after, .oew-device-galaxy-s8 .oew-device-sensors::before {
+  background: #666;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+.oew-device-galaxy-s8 .oew-device-sensors::after {
+  box-shadow: -192px 0 #333, -174px 0 #333, -240px 0 #333;
+  height: 8px;
+  right: -90px;
+  margin-top: -4px;
+  width: 8px;
+}
+.oew-device-galaxy-s8 .oew-device-sensors::before {
+  box-shadow: 186px 0 #666;
+  height: 12px;
+  left: -90px;
+  margin-top: -6px;
+  width: 12px;
+}
+.oew-device-galaxy-s8 .oew-device-btns {
+  background: #9c9c9c;
+  border-radius: 3px 0 0 3px;
+  height: 116px;
+  left: -3px;
+  position: absolute;
+  top: 144px;
+  width: 3px;
+}
+.oew-device-galaxy-s8 .oew-device-btns::after {
+  background: #9c9c9c;
+  border-radius: 3px 0 0 3px;
+  content: "";
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 164px;
+  width: 3px;
+}
+.oew-device-galaxy-s8 .oew-device-power {
+  background: #9c9c9c;
+  border-radius: 0 3px 3px 0;
+  height: 54px;
+  right: -3px;
+  position: absolute;
+  top: 260px;
+  width: 3px;
+}
+.oew-device-galaxy-s8.oew-device-blue .oew-device-frame {
+  border-color: #a3c5e8;
+  box-shadow: inset 0 0 0 2px #5192d4;
+}
+.oew-device-galaxy-s8.oew-device-blue .oew-device-stripe::after, .oew-device-galaxy-s8.oew-device-blue .oew-device-stripe::before {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.oew-device-galaxy-s8.oew-device-blue .oew-device-btns, .oew-device-galaxy-s8.oew-device-blue .oew-device-btns::after {
+  background: #5192d4;
+}
+.oew-device-galaxy-s8.oew-device-blue .oew-device-power {
+  background: #5192d4;
+}
+
+.oew-device-ipad-pro {
+  height: 804px;
+  width: 560px;
+}
+.oew-device-ipad-pro .oew-device-frame {
+  background: #fff;
+  border-radius: 38px;
+  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
+  height: 804px;
+  padding: 62px 25px;
+  width: 560px;
+}
+.oew-device-ipad-pro .oew-device-content {
+  border: 2px solid #222;
+  border-radius: 2px;
+  height: 680px;
+  width: 510px;
+}
+.oew-device-ipad-pro .oew-device-header {
+  border: 2px solid #c8cacb;
+  border-radius: 50%;
+  bottom: 17px;
+  height: 34px;
+  left: 50%;
+  margin-left: -17px;
+  position: absolute;
+  width: 34px;
+}
+.oew-device-ipad-pro .oew-device-sensors {
+  background: #666;
+  border-radius: 50%;
+  height: 10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  position: absolute;
+  top: 34px;
+  width: 10px;
+}
+.oew-device-ipad-pro.oew-device-gold .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+}
+.oew-device-ipad-pro.oew-device-gold .oew-device-header {
+  border-color: #e4b08a;
+}
+.oew-device-ipad-pro.oew-device-rosegold .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
+}
+.oew-device-ipad-pro.oew-device-rosegold .oew-device-header {
+  border-color: #f6a69a;
+}
+.oew-device-ipad-pro.oew-device-spacegray .oew-device-frame {
+  background: #222;
+  box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
+}
+.oew-device-ipad-pro.oew-device-spacegray .oew-device-header {
+  border-color: #818187;
+}
+
+.oew-device-surface-pro {
+  height: 394px;
+  width: 561px;
+}
+.oew-device-surface-pro .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 394px;
+  margin: 0 auto;
+  padding: 26px 24px;
+  width: 561px;
+}
+.oew-device-surface-pro .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 342px;
+  width: 513px;
+}
+.oew-device-surface-pro .oew-device-btns::after, .oew-device-surface-pro .oew-device-btns::before {
+  background: #c8c8c8;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+}
+.oew-device-surface-pro .oew-device-btns::after {
+  left: 48px;
+  width: 26px;
+}
+.oew-device-surface-pro .oew-device-btns::before {
+  left: 94px;
+  width: 48px;
+}
+.oew-device-surface-pro .oew-device-sensors {
+  background: #333;
+  border-radius: 50%;
+  height: 6px;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -3px;
+  position: absolute;
+  top: 14px;
+  width: 6px;
+}
+
+.oew-device-surface-book {
+  height: 424px;
+  width: 728px;
+}
+.oew-device-surface-book .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 408px;
+  margin: 0 auto;
+  padding: 24px 22px;
+  position: relative;
+  width: 584px;
+}
+.oew-device-surface-book .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 360px;
+  width: 540px;
+}
+.oew-device-surface-book .oew-device-btns::after, .oew-device-surface-book .oew-device-btns::before {
+  background: #c8c8c8;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+}
+.oew-device-surface-book .oew-device-btns::after {
+  left: 122px;
+  width: 20px;
+}
+.oew-device-surface-book .oew-device-btns::before {
+  left: 168px;
+  width: 44px;
+}
+.oew-device-surface-book .oew-device-power {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border: solid #c8c8c8;
+  border-radius: 2px;
+  border-width: 0 2px;
+  height: 12px;
+  margin-top: 4px;
+  position: relative;
+  width: 728px;
+}
+.oew-device-surface-book .oew-device-power::after, .oew-device-surface-book .oew-device-power::before {
+  content: "";
+  position: absolute;
+}
+.oew-device-surface-book .oew-device-power::after {
+  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a2a2 100%);
+  border-radius: 0 0 6px 6px;
+  height: 8px;
+  left: 50%;
+  margin-left: -125px;
+  top: 0;
+  width: 250px;
+  z-index: 1;
+}
+.oew-device-surface-book .oew-device-power::before {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border-radius: 2px 2px 0 0;
+  bottom: 12px;
+  height: 8px;
+  left: 50%;
+  margin-left: -292px;
+  width: 584px;
+}
+
+.oew-device-macbook {
+  height: 432px;
+  width: 740px;
+}
+.oew-device-macbook .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #c8cacb;
+  height: 428px;
+  margin: 0 auto;
+  padding: 29px 19px 39px 19px;
+  position: relative;
+  width: 614px;
+}
+.oew-device-macbook .oew-device-frame::after {
+  background: #272727;
+  border-radius: 0 0 20px 20px;
+  bottom: 2px;
+  content: "";
+  height: 26px;
+  left: 2px;
+  position: absolute;
+  width: 610px;
+}
+.oew-device-macbook .oew-device-frame::before {
+  bottom: 10px;
+  color: #c8cacb;
+  content: "MacBook";
+  font-size: 12px;
+  height: 16px;
+  left: 50%;
+  line-height: 16px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 1;
+}
+.oew-device-macbook .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 360px;
+  width: 576px;
+}
+.oew-device-macbook .oew-device-power {
+  background: #e2e3e4;
+  border: solid #d5d6d8;
+  border-radius: 2px 2px 0 0;
+  border-width: 0 4px;
+  height: 4px;
+  margin-top: -10px;
+  position: relative;
+  width: 740px;
+  z-index: 9;
+}
+.oew-device-macbook .oew-device-power::after, .oew-device-macbook .oew-device-power::before {
+  content: "";
+  position: absolute;
+}
+.oew-device-macbook .oew-device-power::after {
+  background: radial-gradient(circle at center, #e2e3e4 0, #e2e3e4 85%, #a0a3a7 100%);
+  border: solid #adb0b3;
+  border-width: 0 2px;
+  height: 4px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+}
+.oew-device-macbook .oew-device-power::before {
+  background: #a0a3a7;
+  border-radius: 0 0 180px 180px/0 0 10px 10px;
+  box-shadow: inset 0 -2px 6px 0 #474a4d;
+  height: 10px;
+  left: -4px;
+  margin: 0 auto;
+  top: 4px;
+  width: 740px;
+}
+.oew-device-macbook.oew-device-gold .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #edccb4;
+}
+.oew-device-macbook.oew-device-gold .oew-device-power {
+  background: #f7e8dd;
+  border-color: #edccb4;
+}
+.oew-device-macbook.oew-device-gold .oew-device-power::after {
+  background: radial-gradient(circle at center, #f7e8dd 0, #f7e8dd 85%, #dfa276 100%);
+  border-color: #e4b08a;
+}
+.oew-device-macbook.oew-device-gold .oew-device-power::before {
+  background: #edccb4;
+  box-shadow: inset 0 -2px 6px 0 #83491f;
+}
+.oew-device-macbook.oew-device-rosegold .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #f6a69a;
+}
+.oew-device-macbook.oew-device-rosegold .oew-device-power {
+  background: #facfc9;
+  border-color: #f6a69a;
+}
+.oew-device-macbook.oew-device-rosegold .oew-device-power::after {
+  background: radial-gradient(circle at center, #facfc9 0, #facfc9 85%, #ef6754 100%);
+  border-color: #f6a69a;
+}
+.oew-device-macbook.oew-device-rosegold .oew-device-power::before {
+  background: #f6a69a;
+  box-shadow: inset 0 -2px 6px 0 #851b0c;
+}
+.oew-device-macbook.oew-device-spacegray .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #767a7d;
+}
+.oew-device-macbook.oew-device-spacegray .oew-device-power {
+  background: #909496;
+  border-color: #767a7d;
+}
+.oew-device-macbook.oew-device-spacegray .oew-device-power::after {
+  background: radial-gradient(circle at center, #909496 0, #909496 85%, #515456 100%);
+  border-color: #5d6163;
+}
+.oew-device-macbook.oew-device-spacegray .oew-device-power::before {
+  background: #515456;
+  box-shadow: inset 0 -2px 6px 0 black;
+}
+
+.oew-device-macbook-pro {
+  height: 444px;
+  width: 740px;
+}
+.oew-device-macbook-pro .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #c8cacb;
+  height: 428px;
+  margin: 0 auto;
+  padding: 29px 19px 39px 19px;
+  position: relative;
+  width: 614px;
+}
+.oew-device-macbook-pro .oew-device-frame::after {
+  background: #272727;
+  border-radius: 0 0 20px 20px;
+  bottom: 2px;
+  content: "";
+  height: 26px;
+  left: 2px;
+  position: absolute;
+  width: 610px;
+}
+.oew-device-macbook-pro .oew-device-frame::before {
+  bottom: 10px;
+  color: #c8cacb;
+  content: "MacBook Pro";
+  font-size: 12px;
+  height: 16px;
+  left: 50%;
+  line-height: 16px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 1;
+}
+.oew-device-macbook-pro .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 360px;
+  width: 576px;
+}
+.oew-device-macbook-pro .oew-device-power {
+  background: #e2e3e4;
+  border: solid #d5d6d8;
+  border-radius: 2px 2px 0 0;
+  border-width: 2px 4px 0 4px;
+  height: 14px;
+  margin-top: -10px;
+  position: relative;
+  width: 740px;
+  z-index: 9;
+}
+.oew-device-macbook-pro .oew-device-power::after, .oew-device-macbook-pro .oew-device-power::before {
+  content: "";
+  position: absolute;
+}
+.oew-device-macbook-pro .oew-device-power::after {
+  background: #d5d6d8;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 4px 2px #babdbf;
+  height: 10px;
+  left: 50%;
+  margin-left: -60px;
+  top: -2px;
+  width: 120px;
+}
+.oew-device-macbook-pro .oew-device-power::before {
+  background: #a0a3a7;
+  border-radius: 0 0 180px 180px/0 0 12px 12px;
+  box-shadow: inset 0 -2px 6px 0 #474a4d;
+  height: 12px;
+  left: -4px;
+  margin: 0 auto;
+  top: 10px;
+  width: 740px;
+}
+.oew-device-macbook-pro.oew-device-spacegray .oew-device-frame {
+  box-shadow: inset 0 0 0 2px #767a7d;
+}
+.oew-device-macbook-pro.oew-device-spacegray .oew-device-power {
+  background: #909496;
+  border-color: #767a7d;
+}
+.oew-device-macbook-pro.oew-device-spacegray .oew-device-power::after {
+  background: #83878a;
+  box-shadow: inset 0 0 4px 2px #6a6d70;
+}
+.oew-device-macbook-pro.oew-device-spacegray .oew-device-power::before {
+  background: #515456;
+  box-shadow: inset 0 -2px 6px 0 black;
+}
+
+.oew-device-surface-studio {
+  height: 506px;
+  width: 640px;
+}
+.oew-device-surface-studio .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px black;
+  height: 440px;
+  padding: 20px;
+  width: 640px;
+}
+.oew-device-surface-studio .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 400px;
+  width: 600px;
+}
+.oew-device-surface-studio .oew-device-stripe {
+  background: #444;
+  border-radius: 0 0 2px 2px;
+  bottom: 0;
+  height: 4px;
+  left: 50%;
+  margin-left: -117px;
+  position: absolute;
+  width: 234px;
+}
+.oew-device-surface-studio .oew-device-stripe::after, .oew-device-surface-studio .oew-device-stripe::before {
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: -75px;
+}
+.oew-device-surface-studio .oew-device-stripe::after {
+  border: 6px solid #d5d6d8;
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+  box-shadow: inset 0 0 0 4px #c8cacb;
+  height: 60px;
+  margin-left: -140px;
+  width: 280px;
+  z-index: -1;
+}
+.oew-device-surface-studio .oew-device-stripe::before {
+  border: 15px solid #e2e3e4;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  height: 70px;
+  margin-left: -150px;
+  width: 300px;
+  z-index: -2;
+}
+.oew-device-surface-studio .oew-device-power {
+  background: #eff0f0;
+  border: solid #e2e3e4;
+  border-radius: 0 0 2px 2px;
+  border-width: 0 4px 2px 4px;
+  height: 32px;
+  margin: 30px auto 0 auto;
+  position: relative;
+  width: 250px;
+}
+.oew-device-surface-studio .oew-device-power::after {
+  background: #adb0b3;
+  content: "";
+  height: 2px;
+  left: -4px;
+  position: absolute;
+  top: 4px;
+  width: 250px;
+}
+
+.oew-device-imac-pro {
+  height: 484px;
+  width: 624px;
+}
+.oew-device-imac-pro .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 2px #080808;
+  height: 428px;
+  padding: 24px 24px 80px 24px;
+  position: relative;
+  width: 624px;
+}
+.oew-device-imac-pro .oew-device-frame::after {
+  background: #2f2e33;
+  border-radius: 0 0 18px 18px;
+  bottom: 2px;
+  content: "";
+  height: 54px;
+  left: 2px;
+  position: absolute;
+  width: 620px;
+}
+.oew-device-imac-pro .oew-device-frame::before {
+  bottom: 15px;
+  color: #0d0d0d;
+  content: "";
+  font-size: 24px;
+  height: 24px;
+  left: 50%;
+  line-height: 24px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 9;
+}
+.oew-device-imac-pro .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 324px;
+  width: 576px;
+}
+.oew-device-imac-pro .oew-device-power::after, .oew-device-imac-pro .oew-device-power::before {
+  content: "";
+}
+.oew-device-imac-pro .oew-device-power::after {
+  background: #222225;
+  border-radius: 2px;
+  height: 6px;
+  margin: 0 auto;
+  position: relative;
+  width: 180px;
+}
+.oew-device-imac-pro .oew-device-power::before {
+  border: solid transparent;
+  border-bottom-color: #333333;
+  border-width: 0 8px 50px 8px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 130px;
+}
+
+.oew-device-apple-watch {
+  height: 234px;
+  width: 200px;
+}
+.oew-device-apple-watch .oew-device-frame {
+  background: #0d0d0d;
+  border-radius: 40px;
+  box-shadow: inset 0 0 2px 2px #adb0b3, inset 0 0 0 6px #e2e3e4, inset 0 0 0 8px #e2e3e4;
+  height: 234px;
+  padding: 32px;
+  position: relative;
+  width: 200px;
+}
+.oew-device-apple-watch .oew-device-frame::after {
+  border-radius: 30px;
+  box-shadow: inset 0 0 25px 0 rgba(255, 255, 255, 0.75);
+  content: "";
+  height: 216px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+  width: 182px;
+}
+.oew-device-apple-watch .oew-device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 170px;
+  width: 136px;
+}
+.oew-device-apple-watch .oew-device-btns {
+  background: #e2e3e4;
+  border-left: 2px solid #adb0b3;
+  border-radius: 8px 4px 4px 8px/20px 4px 4px 20px;
+  box-shadow: inset 0 0 2px 2px #adb0b3;
+  height: 44px;
+  position: absolute;
+  right: -10px;
+  top: 52px;
+  width: 16px;
+  z-index: 9;
+}
+.oew-device-apple-watch .oew-device-btns::after {
+  background: #e2e3e4;
+  border-radius: 4px 2px 2px 4px/10px 2px 2px 10px;
+  box-shadow: inset 0 0 1px 2px #adb0b3;
+  content: "";
+  height: 66px;
+  right: 6px;
+  position: absolute;
+  top: 68px;
+  width: 8px;
+}
+.oew-device-apple-watch .oew-device-btns::before {
+  background: #adb0b3;
+  box-shadow: 0 -16px #adb0b3, 0 -12px #adb0b3, 0 -8px #adb0b3, 0 -4px #adb0b3, 0 4px #adb0b3, 0 8px #adb0b3, 0 12px #adb0b3, 0 16px #adb0b3;
+  content: "";
+  height: 2px;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+}
+
+/* RTL */
+/*------------------------------------------------------------------
+Responsive
+-------------------------------------------------------------------*//*# sourceMappingURL=style.css.map */
