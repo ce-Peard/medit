@@ -45,7 +45,7 @@ add_action('wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style');
 
 function contact_btn($items, $args)
 {
-	$items .= '<li class="menu-item custom-btn"><a href="/contact" class="contact-btn">Nous contacter</a></li>';
+	$items .= '<li class="menu-item custom-btn menu-item-type-post_type menu-item-object-page"><a href="/contact" class="contact-btn menu-link">Contact us</a></li>';
 	return $items;
 }
 

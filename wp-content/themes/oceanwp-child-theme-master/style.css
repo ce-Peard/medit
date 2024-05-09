@@ -12,14 +12,13 @@ Version: 1.0
 
 
 .contact-btn{
-    display:inline-block;
+    display:unset;
     background-color:white;
-    padding:6px 16px;
+    padding:10px 16px;
     border-radius:6px;
 }
 
 #site-navigation-wrap .dropdown-menu > li.custom-btn {
-    vertical-align: middle;
     margin-top: 22px;
 }
 
